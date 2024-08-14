@@ -106,7 +106,7 @@ else if (message_text.toLowerCase().startsWith("/grupal")) {
             sendText(chat_id, "Para saber como me parece la clase de progra es: /progra");
             sendText(chat_id, "Para hacer una conversion de Euro a quetzales poner: /cambio + (cantidad)");
             sendText(chat_id, "Si quieres un saludo especial poner: /hola");
-            sendText(chat_id, "Si quieres mandar un mensaje al grupo predetermindo poner: /grupal + (Mensaje a enviar sin importar los espacios y longitud)");
+            sendText(chat_id, "Si quieres mandar un mensaje al grupo predetermindo poner: /grupal + (Mensaje)");
         }
 
 
