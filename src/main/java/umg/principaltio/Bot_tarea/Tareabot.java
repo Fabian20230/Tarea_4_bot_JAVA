@@ -82,7 +82,8 @@ else if (message_text.toLowerCase().startsWith("/grupal")) {
 //            System.out.println("Enviaste:" +message_text);
      //   }
 
-            List<Long> groupIds = new ArrayList<>(List.of(6308317056L , 5481012733L, 1510734672L, 642182669L));
+            List<Long> groupIds = new ArrayList<>(List.of(6308317056L , 5481012733L, 1510734672L,7070992511L));
+//642182669L
 
                 String[] parts = message_text.split(" ", 2);
                 if (parts.length == 2) {
@@ -106,7 +107,7 @@ else if (message_text.toLowerCase().startsWith("/grupal")) {
             sendText(chat_id, "Para saber como me parece la clase de progra es: /progra");
             sendText(chat_id, "Para hacer una conversion de Euro a quetzales poner: /cambio + (cantidad)");
             sendText(chat_id, "Si quieres un saludo especial poner: /hola");
-       //     sendText(chat_id, "Si quieres mandar un mensaje al grupo predetermindo poner: /grupal + (Mensaje a enviar sin importar los espacios y longitud)");
+            sendText(chat_id, "Si quieres mandar un mensaje al grupo predetermindo poner: /grupal + (Mensaje)");
         }
 
 

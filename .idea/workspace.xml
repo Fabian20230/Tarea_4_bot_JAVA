@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a7c3c5-043d-48d2-8556-add1b0be86b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/Bot_tarea/Tareabot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/Main.java" afterDir="false" />
+    <list default="true" id="b6a7c3c5-043d-48d2-8556-add1b0be86b3" name="Changes" comment="listo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/db/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/db/TrasactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umg/principaltio/Bot_tarea/Tareabot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/Bot_tarea/Tareabot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umg/principaltio/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umg/principaltio/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Fabian20230&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Fabian20230/Tarea_4_bot_JAVA.git&quot;,
+    &quot;accountId&quot;: &quot;14cb39cd-e8c5-40d1-8dd6-66cc92fec9fb&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -40,22 +53,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/INTELILLIJ/Tarea_4_bot/src/main/java/umg/principaltio/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "E:/INTELILLIJ/Tarea_4_bot/src/main/java/umg/principaltio/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="umg.principaltio.db" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -75,11 +94,31 @@
       <workItem from="1723423442071" duration="8218000" />
       <workItem from="1723509806836" duration="12310000" />
       <workItem from="1723573718365" duration="1361000" />
-      <workItem from="1723595282748" duration="8538000" />
+      <workItem from="1723595282748" duration="9178000" />
+      <workItem from="1723610756608" duration="1042000" />
+      <workItem from="1723681931539" duration="3051000" />
+      <workItem from="1723770199615" duration="172000" />
+      <workItem from="1723775176765" duration="4296000" />
+      <workItem from="1723857719950" duration="318000" />
+      <workItem from="1723860088230" duration="2408000" />
+      <workItem from="1723914345560" duration="5682000" />
     </task>
+    <task id="LOCAL-00001" summary="listo">
+      <option name="closed" value="true" />
+      <created>1723604260749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723604260749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="listo" />
+    <option name="LAST_COMMIT_MESSAGE" value="listo" />
   </component>
 </project>
